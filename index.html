@@ -1,18 +1,132 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>3D visualization Display</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Visualization Portfolio | Mathematical Physics</title>
+    <style>
+        /* Modern Academic Styling */
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.7;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            background-color: #f8f9fa;
+            color: #2c3e50;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #1a252f;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        /* Grouping Sections */
+        .section-container {
+            background: #ffffff;
+            padding: 25px 35px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid #3498db;
+        }
+
+        /* Distinct colors for each part to improve navigation */
+        .part-1 { border-top-color: #3498db; } /* Blue */
+        .part-2 { border-top-color: #27ae60; } /* Green */
+        .part-3 { border-top-color: #8e44ad; } /* Purple */
+
+        h2 {
+            margin-top: 0;
+            color: #2c3e50;
+            font-size: 1.4rem;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        /* Link Styling */
+        .project-link {
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            transition: transform 0.2s, color 0.2s;
+        }
+
+        .project-link:before {
+            content: "→";
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .project-link:hover {
+            color: #d35400;
+            transform: translateX(5px);
+        }
+
+        footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #95a5a6;
+        }
+    </style>
 </head>
 <body>
-    <h1>Weclome to my page!</h1>
-    
-    <nav>
-        <h2>index</h2>
+
+    <header>
+        <h1>Academic 3D Visualizations</h1>
+        <p class="subtitle">Exploring the Intersection of Mathematics, Physics, and Computation</p>
+    </header>
+
+   <div class="section-container part-1">
+        <h2>Part 1. Periodic Table Visualization</h2>
         <ul>
-            <li><a href="POSET_Diagram.html">My thesis </a></li>
-            <li><a href="page2.html">About me</a></li>
+            <li><a class="project-link" href="periodic_table_3d.html">Interactive 3D Periodic Table</a></li>
+            <li><a class="project-link" href="element_properties.html">Elemental Trends and Data Analysis</a></li>
         </ul>
-    </nav>
+    </div>
+
+    <div class="section-container part-2">
+        <h2>Part 2. Prime Table Visualization</h2>
+        <ul>
+            <li><a class="project-link" href="POSET_Diagram.html">Visualizing k-tuples Partial-order Diagram</a></li>
+            <li><a class="project-link" href="number_theory_viz.html">Modular Arithmetic and Patterns</a></li>
+        </ul>
+    </div>
+
+    <div class="section-container part-3">
+        <h2>Part 3. Knots Table</h2>
+        <ul>
+            <li><a class="project-link" href="POSET_Diagram.html">Topological Knot Theory & POSET Diagrams</a></li>
+            <li><a class="project-link" href="knot_invariants.html">Knot Invariants and 3D Structures</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>© 2026 | Research Showcase | <a href="page2.html" style="color: #95a5a6;">About Me</a></p>
+    </footer>
+
 </body>
 </html>
