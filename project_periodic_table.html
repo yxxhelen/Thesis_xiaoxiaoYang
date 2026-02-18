@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail | 3D Periodic Table</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fff;
+        }
+        .nav-back { margin-bottom: 20px; }
+        .nav-back a { text-decoration: none; color: #3498db; font-weight: bold; }
+        
+        header { border-bottom: 2px solid #3498db; margin-bottom: 30px; padding-bottom: 10px; }
+        h1 { margin: 0; color: #1a252f; }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 350px 1fr; 
+            gap: 30px;
+        }
+
+        .description {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            height: fit-content;
+        }
+
+
+        .viz-container {
+            width: 100%;
+            height: 700px; 
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .math-box {
+            background: #fff;
+            padding: 10px;
+            border: 1px solid #eee;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 900px) {
+            .content-grid { grid-template-columns: 1fr; }
+            .viz-container { height: 500px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-back"><a href="index.html">← Back to Portfolio</a></div>
+
+    <header>
+        <h1>Interactive 3D Periodic Table</h1>
+        <p style="color: #7f8c8d;">Visualizing chemical trends and quantum shells in a 3D pyramid structure.</p>
+    </header>
+
+    <div class="content-grid">
+       <div class="description">
+            <h3>Overview</h3>
+            <p>
+                This 3D visualization is constructed as an <strong>Energy Pyramid</strong>, where the spatial arrangement is governed strictly by the four quantum numbers. Unlike traditional 2D tables, this model emphasizes the underlying symmetry of orbital filling and energy level structures.
+            </p>
+            
+            <h3>Design Principles</h3>
+            <p>The pyramid utilizes a sophisticated mapping system to translate quantum mechanics into spatial coordinates:</p>
+            <ul>
+                <li><strong>Orbital Block Sectors:</strong> The pyramid is segmented into four distinct color-coded blocks corresponding to the azimuthal quantum number \(l\): 
+                    <span style="color:#e74c3c">s (red)</span>, 
+                    <span style="color:#f1c40f">p (yellow)</span>, 
+                    <span style="color:#3498db">d (blue)</span>, and 
+                    <span style="color:#2ecc71">f (green)</span>.
+                </li>
+                <li><strong>Intra-layer Arrangement:</strong> Within each energy layer, the horizontal (\(X\)) and depth (\(Y\)) positions map to the magnetic quantum number \(m_l\) and spin quantum number \(m_s\), respectively. This effectively visualizes the spatial orientation and pairing of electrons within specific subshells.</li>
+            </ul>
+
+            <div class="math-box">
+                <strong>Physics Context:</strong>
+                <p>The electron configuration follows the: 
+                $$n + l \text{ rule (Madelung rule)}$$
+                mapping atoms into a 3D spatial coordinate system $(r, \theta, z)$.</p>
+            </div>
+
+            <p style="font-size: 0.85rem; color: #7f8c8d; border-top: 1px solid #eee; pt-10px; margin-top: 20px;">
+                <strong>Interaction:</strong> Use Left Click to rotate, Scroll to zoom, and Hover over elements to view detailed quantum properties.
+            </p>
+        </div>
+
+        <div class="viz-container">
+            <iframe src="quantum_pyramid_fix.html"></iframe>
+        </div>
+    </div>
+
+</body>
+</html>
