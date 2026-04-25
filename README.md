@@ -1,6 +1,6 @@
 # Visualizing Algebraic Structures
 
-This repository contains the code and interactive visualizations for my honors thesis:
+This repository contains the code and interactive visualizations for Xiaoxiao Yang's Honor thesis:
 
 **"Visualizing Algebraic Structures to Simplify Complex Problems"**
 
